@@ -7,7 +7,8 @@ public class Pet {
     byte healthLevel;
     byte hungerLevel;
     byte moodLevel;
-    String favouriteFood;
-    String favouriteActivity;
+    Food favouriteFood;
+    Activity favouriteActivity;
+
 
 }
