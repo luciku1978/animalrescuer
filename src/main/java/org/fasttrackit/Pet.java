@@ -1,14 +1,14 @@
 package org.fasttrackit;
 
 public class Pet extends Animal{
-    String name;
-    int age;
-    byte healthLevel;
-    byte hungerLevel;
-    byte moodLevel;
-    Food favouriteFood;
-    Activity favouriteActivity;
-    boolean isAdopted;
+    private String name;
+    private int age;
+    private byte healthLevel;
+    private byte hungerLevel;
+    private byte moodLevel;
+    private Food favouriteFood;
+    private Activity favouriteActivity;
+    private boolean isAdopted;
 
     public Pet(String race,String colour, String sex,String name,
                int age,
