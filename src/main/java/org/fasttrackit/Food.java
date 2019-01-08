@@ -1,15 +1,13 @@
 package org.fasttrackit;
 
-import java.util.Date;
-
 public class Food {
     private String name;
     private double price;
     private int quantity;
-    private Date expiryDate;
+    private String expiryDate;
     private boolean availability;
 
-    public Food(String name, double price, int quantity, Date expiryDate, boolean availability) {
+    public Food(String name, double price, int quantity, String expiryDate, boolean availability) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -41,11 +39,11 @@ public class Food {
         this.quantity = quantity;
     }
 
-    public Date getExpiryDate() {
+    public String getExpiryDate() {
         return expiryDate;
     }
 
-    public void setExpiryDate(Date expiryDate) {
+    public void setExpiryDate(String expiryDate) {
         this.expiryDate = expiryDate;
     }
 

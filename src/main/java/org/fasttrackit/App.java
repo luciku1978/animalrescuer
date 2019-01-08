@@ -53,6 +53,14 @@ public class App
 //        System.out.println("Wellcome to "+firstGame.name+","+firstGame.description+"\n"+
 //                firstGame.adopter.name+" adopted "+firstGame.pet.name+".");
 
+            Activity activity1 = new Activity("fetch","the pet brings back the ball");
+            Food foodItem1 = new Food("Chappy",100,100,"20.12.2020",true);
+            Owner owner1 = new Owner("John",2500,"Cluj","0751515151",35,"M");
+            Pet pet1 = new Pet("dog","white","F","Rex",2,10,9,10,foodItem1,activity1,true);
 
+            owner1.feed_the_pet(pet1,foodItem1);
+            owner1.play_with_your_pet(pet1,activity1);
     }
+
+
 }

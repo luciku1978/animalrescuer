@@ -45,4 +45,14 @@ public class Owner extends Adopter {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+    public void feed_the_pet(Pet myPet,Food hisFood){
+        System.out.println(super.getName()+" just gave some "+hisFood.getName()+
+                " food to his pet "+ myPet.getName()+" !");
+    }
+
+    public void play_with_your_pet(Pet myPet,Activity activity){
+        System.out.println(super.getName()+" is playing "+activity.getName()+
+                " in the park with his "+ myPet.getRace()+" "+myPet.getName()+"!");
+    }
 }
