@@ -8,4 +8,12 @@ public class Food {
     int quantity;
     Date expiryDate;
     boolean availability;
+
+    public Food(String name, double price, int quantity, Date expiryDate, boolean availability) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.expiryDate = expiryDate;
+        this.availability = availability;
+    }
 }
