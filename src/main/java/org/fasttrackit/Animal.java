@@ -34,4 +34,24 @@ public class Animal {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "race='" + race + '\'' +
+                ", colour='" + colour + '\'' +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
+
+    public void checkMood(Animal animal, boolean isHappy){
+        if (isHappy =true){
+        System.out.println("My "+ animal.getRace()+ " seems to be happy!");}
+        else{
+            System.out.println("My " + animal.getRace() + "seems to be sad!");
+        }
+    }
+
+
+
 }

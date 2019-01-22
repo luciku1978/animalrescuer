@@ -60,6 +60,11 @@ public class App
 
             owner1.feed_the_pet(pet1,foodItem1);
             owner1.play_with_your_pet(pet1,activity1);
+
+            Animal animal1 = new Animal ("dog","black","M");
+            animal1.checkMood(animal1,true);
+
+            pet1.checkMood(animal1,true);
     }
 
 

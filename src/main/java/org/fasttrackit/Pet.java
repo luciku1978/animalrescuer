@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Pet extends Animal{
+public class Pet extends Animal {
     private String name;
     private int age;
     private int healthLevel;
@@ -10,16 +10,15 @@ public class Pet extends Animal{
     private Activity favouriteActivity;
     private boolean isAdopted;
 
-    public Pet(String race,String colour, String sex,String name,
+    public Pet(String race, String colour, String sex, String name,
                int age,
                int healthLevel,
                int hungerLevel,
                int moodLevel,
                Food favouriteFood,
                Activity favouriteActivity,
-               boolean isAdopted)
-    {
-        super(race,colour,sex);
+               boolean isAdopted) {
+        super(race, colour, sex);
         this.name = name;
         this.age = age;
         this.healthLevel = healthLevel;
@@ -92,5 +91,17 @@ public class Pet extends Animal{
 
     public void setAdopted(boolean adopted) {
         isAdopted = adopted;
+    }
+
+    @Override
+    public void checkMood(Animal animal, boolean isHappy) {
+
+        if (isHappy = true && moodLevel > 5) {
+                System.out.println("My " + super.getRace() + name +" seems to be  very happy!");
+
+        } else
+            {
+            System.out.println("My " + super.getRace() + name +  "seems to be sad!");
+        }
     }
 }
